@@ -1,0 +1,54 @@
+INSERT INTO atvv.clientes (nome, nomeSocial, cpf, rg, telefone, id)
+VALUES
+  ('Gustavo Sena', 'Gustavo', '43353442872', '526664436', '12996572436', 1),
+  ('Dayane Brito', 'Dayane', '47859625814', '78639254', '15997478569', 2),
+  ('Debora Cruz', 'Debora', '75632847152', '789512581', '12999635147', 3),
+  ('Valeria Faria', 'Valeria', '14852636985', '789358145', '14999635147', 4),
+  ('Claudio Roberto', 'Claudio', '78945612323', '789557711', '13992963789', 5),
+  ('Joao Victor Simao', 'Joao', '45454545454', '789589933', '18996745896', 6),
+  ('Pedro Brito', 'Pedro', '74125896325', '124559988', '21996647852', 7),
+  ('Maya Vitoria', 'Maya', '75321489625', '775599658', '23997965896', 8),
+  ('Paula Simao', 'Paula', '78932145696', '756985214', '12997741258', 9),
+  ('Miller Santos', 'Miller', '14796325874', '882245963', '12996612578', 10);
+
+INSERT INTO atvv.pets (cpfDono, nomePet, tipo, raca, genero, id)
+VALUES
+('43353442872', 'Luki', 'Cachorro', 'Vira-Lata', 'Macho', 1 ),
+('47859625814', 'Luna', 'Cachorro', 'Labrador', 'Fêmea', 2),
+('75632847152', 'Tom', 'Gato', 'Siamese', 'Macho', 3),
+('14852636985', 'Bella', 'Gato', 'Persa', 'Fêmea', 4),
+('78945612323', 'Max', 'Cachorro', 'Poodle', 'Macho', 5),
+('45454545454', 'Daisy', 'Cachorro', 'Bulldog', 'Fêmea', 6),
+('74125896325', 'Simba', 'Gato', 'Maine Coon', 'Macho', 7),
+('75321489625', 'Molly', 'Cachorro', 'Beagle', 'Fêmea', 8),
+('78932145696', 'Charlie', 'Cachorro', 'Vira-lata', 'Macho', 9),
+('14796325874', 'Lucy', 'Gato', 'Siamês', 'Fêmea', 10);
+
+INSERT INTO atvv.produtos (codigoProduto, nomeProduto, precoProduto, id)
+VALUES
+('1', 'Ração Premium', '50', 1),
+('2','Coleira Anti-pulgas', '20', 2),
+('3','Brinquedo de Pelúcia', '15', 3),
+('4','Shampoo Antialérgico', '30', 4),
+('5','Caixa de Areia', '40', 5);
+
+INSERT INTO atvv.servicos (codigoServico, nomeServico, precoServico, id)
+VALUES
+('1','Banho', '32', 1),
+('2','Tosa', '25', 2),
+('3','Consulta Veterinária', '50', 3),
+('4','Vacinação', '40', 4),
+('5','Hospedagem', '60', 5);
+  
+INSERT INTO atvv.compras (codigoCompra, nomeCliente, cpfCliente, nomeProdServ, codigoProdServ, valor, quantidade, tipoPet, racaPet, totalCompra, id)
+VALUES
+('1', 'Gustavo Sena', '43353442872', 'Ração Premium', '1', '50', '1', 'Cachorro', 'Luki', '50', 1),
+('2', 'Dayane Brito', '47859625814', 'Coleira Anti-pulgas', '2', '20', '2', 'Cachorro', 'Labrador', '40', 2),
+('3', 'Debora Cruz', '75632847152', 'Brinquedo de Pelúcia', '3', '15', '3', 'Gato', 'Siamese', '45', 3),
+('4', 'Valeria Faria', '14852636985', 'Shampoo Antialérgico', '4', '30', '4', 'Gato', 'Persa', '120', 4),
+('5', 'Claudio Roberto', '78945612323', 'Caixa de Areia', '5', '40', '5', 'Cachorro', 'Poodle', '200', 5),
+('6', 'Joao Simao Nanzer', '45454545454', 'Banho', '6', '32', '6', 'Cachorro', 'Bulldog', '192', 6),
+('7', 'Pedro Brito', '74125896325', 'Tosa', '7', '25', '7', 'Gato', 'Maine Coon', '175', 7),
+('8', 'Maya Vitoria', '75321489625', 'Consulta Veterinária', '8', '50', '8', 'Cachorro', 'Beagle', '400', 8),
+('9', 'Paula Simao', '78932145696', 'Vacinação', '9', '40','9', 'Cachorro', 'Vira-lata', '360', 9),
+('10', 'Miller Santos', '14796325874', 'Hospedagem', '10', '60', '10', 'Gato', 'Siamês', '600', 10);

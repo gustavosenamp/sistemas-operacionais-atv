@@ -11,9 +11,9 @@ app.use(bodyParser.json());
 
 // Conexão com o banco de dados MySQL
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'fatec',
+    host: '54.166.237.4',
+    user: 'pato',
+    password: '123',
     database: 'exemploCRUD'
 });
 
@@ -25,9 +25,6 @@ db.connect(err => {
     console.log('Conectado ao banco de dados MySQL');
 });
 
-// Rotas CRUD
-
-// READ: Obter todos os usuários
 app.get('/usuarios', (req, res) => {
     const sql = 'SELECT * FROM usuarios';
     db.query(sql, (err, result) => {
